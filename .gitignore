@@ -1,0 +1,9 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+
+# Ignore Poetry lock file and virtualenv in backend
+/backend/poetry.lock
+/backend/venv/

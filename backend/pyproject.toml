@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "backend"
+version = "0.1.0"
+description = "Epic Growth Saga Backend: The backend service for the Epic Growth Saga application, responsible for handling business logic, data processing, authentication, server-side interactions, and web automation using Selenium. Built with FastAPI and SQLModel, it serves as the core engine driving the application's functionality and integrates with both the PostgreSQL database and various APIs, while leveraging Selenium for automated browser tasks."
+authors = ["Vadim Surin <7uperior@gmail.com>"]
+license = "GNU GPL"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.104.1"
+sqlmodel = "^0.0.12"
+uvicorn = "^0.24.0"
+pydantic = "^1.9"
+selenium = "^4.15.2"
+flake8 = "^6.1.0"
+
+[tool.poetry.dev-dependencies]
+alembic = "^1.12.1"
+python-jose = {extras = ["cryptography"], version = "^3.3.0"}
+httpx = "^0.25.1"
+passlib = {extras = ["bcrypt"], version = "^1.7.4"}
+pylint = "^3.0.2"
+black = "^23.11.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
